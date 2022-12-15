@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <title>Foody - Organic Food Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <th:block th:replace="/fragments/head.html :: head"></th:block>
+</head>
+
+<body>
+    <div th:replace="/fragments/navbar.html :: navbarfragment"></div>
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <h1 class="display-3 mb-3 animated slideInDown">Contact Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-body" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-dark active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+    <!-- Contact Start -->
+    
+ 
+        
+    <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-0 gx-5 align-items-end">
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="tab-content">
+                <div id="tab-1" class="tab-pane fade show p-0 active" style="border: 1px solid rgb(231, 227, 227); padding: 100px;" >
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h1 class="display-5 mb-3">답글작성</h1>
+                    </div>
+                    <div class="row g-5 justify-content-center">
+                        <div class="col-lg-7 col-md-12 wow fadeInUp" >
+                            <form th:action="@{/qboard/insertrep.do}" method="post">
+                                <div class="mb-3">
+                                    <!-- <input type="text" value="RE:"> -->
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" name="title" th:value="|ㄴ[답변완료] ${board.title}|" readonly>
+
+                                    <!-- <label for="exampleFormControlInput1" class="form-label"><i class="bi bi-check2-square"></i> 제목</label> -->
+                                    <!-- <input type="text" class="form-control" id="exampleFormControlInput1" name="title"> -->
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label"><i class="bi bi-check2-square"></i> 내용</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="content" 
+                                            th:text="|
+                                            -------------------------[ Original Message ] ${board.content}|">
+                                    </textarea>
+                                  </div>
+                                  <br/>
+                                  <input type="hidden" th:value="${board.grp}" name="grp">
+                                  <input type="hidden" th:value="${board.userid}" name="userid">
+                                  <div style="text-align: center;">
+                                    <input type="submit" value="zz" />
+                                    <!-- <button class="btn btn-primary rounded-pill py-3 px-5" type="submit"><i class="bi bi-cursor"></i> 답글등록</button> -->
+                                    <a class="btn btn-primary rounded-pill py-3 px-5" href=""><i class="bi bi-arrow-left-square"></i> 목록</a>
+                                </div>
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
+                            </form>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content">
+        <div id="tab-1" class="tab-pane fade show p-0 active" style="border-radius: 30px; border: 1px solid rgb(231, 227, 227); padding: 100px;" >
+            <br/>
+            <br/>
+            <br/>
+            <div class="section-header text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px; ">
+                <h1 class="display-5 mb-3">원래글</h1>
+                <!-- <p>Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p> -->
+            </div>
+            <div class="row g-5 justify-content-center">
+                <div class="col-lg-7 col-md-12 wow fadeInUp" >
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">제목</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" th:value="${board}">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" th:value="${board.title}">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" th:value="${board.no}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">글쓴이</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" th:value="${board.userid}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">내용</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" th:text="${board.content}"></textarea>
+                    </div>
+                    <br/>
+                    <div style="text-align: center;">
+                        <!-- <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">문의등록하기</button> -->
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">메인으로 돌아가기</a>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                </div>
+            </div> 
+        </div>
+
+
+    <!-- Contact End -->
+
+
+    <div th:replace="/fragments/footer.html :: footerfragment"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<form>
+    <table class="table caption-top">
+        <caption>실시간 배송</caption>
+        <thead>
+            <tr>
+            <th scope="col"> 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                    name='animal' onclick='selectAll(this)'/>
+                </div>
+            <th scope="col">cartno</th>
+            <th scope="col">이미지</th>
+            <th scope="col">상품정보</th>
+            <th scope="col">수량</th>
+            <th scope="col">판매가</th>
+            <th scope="col">합계</th>
+            <th scope="col">delete</th>
+            </tr>
+        </thead>
+        <tbody th:each="tmp, idx : ${ddlist}" >
+            <tr>
+                <th scope="row">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name='animal' id="flexCheckDefault" >
+                        <!-- <label class="form-check-label" for="flexCheckChecked">
+                        </label> -->
+                    </div>
+                </th>
+                <td th:text="${tmp.no}"></td>
+                <td>
+                    <img style="width: 100px;" th:src="@{/img/aboutUs/aboutFirst.png}" >
+                </td>
+                <td th:text="${tmp.name}"></td>
+                <td>
+                    <div class="subdiv">
+                        <div class="basketprice"><input type="hidden" name="p_price" id="p_price2" class="p_price" th:text="${tmp.price}"></div>
+                        <div class="num">
+                            <div class="updown">
+                                <input type="text" name="p_num2" id="p_num2" size="2" maxlength="4" class="p_num" value="1" onkeyup="javascript:basket.changePNum(2);">
+                                <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-up up"></i></span>
+                                <span onclick="javascript:basket.changePNum(2);"><i class="fas fa-arrow-alt-circle-down down"></i></span>
+                            </div>
+                        </div>
+                        <div class="sum">5000</div>
+                    </div>
+                </td>
+                <td> 
+                    <div class="subdiv">
+                        <div class="basketcmd"><a href="javascript:void(0)" class="abutton" onclick="javascript:basket.delItem();">삭제</a></div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">삭제</a>
+        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">장바구니비우기</a>
+    <br/>
+    <br/>
+    <br/>
+    <div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <p>총 상품금액</p>
+                    <p>총 상품금액</p>
+                </div>
+                <div class="col">
+                    <p>총 배달비</p>
+                    <p>총 배달비</p>
+                </div>
+                <div class="col">
+                    <p>결제예정금액</p>
+                    <p>결제예정금액</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<br/>
+<div class="container text-center">
+<div class="row">
+    <div class="col"></div>
+    <div class="col">
+        <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">주문서 작성</a>
+    </div>
+    <div class="col">
+    </div>
+</div>
+</div>
+<br/>
+<hr class="border border-primary border-3 opacity-75">            
+<br/>
+<br/>
+<div class="row g-5 justify-content-center">
+<form>
+    <table class="table caption-top">
+        <caption>택배배송상품</caption>
+        <thead>
+            <tr>
+            <th scope="col"> 
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                    name='animal' onclick='selectAll(this)'/>
+                </div>
+                <th scope="col">이미지</th>
+                <th scope="col">상품정보</th>
+                <th scope="col">수량</th>
+                <th scope="col">판매가</th>
+                <th scope="col">합계f</th>
+            </tr>
+        </thead>
+        <tbody th:each="tmp, idx : ${goodslist}">
+            <tr>
+            <th scope="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" name='animal' id="flexCheckDefault" >
+                    <!-- <label class="form-check-label" for="flexCheckChecked">
+                    </label> -->
+                </div>
+            </th>
+            <td>
+                <img style="width: 100px;" th:src="@{/img/aboutUs/aboutFirst.png}" >
+            </td>
+            <td th:text="${tmp}"></td>
+            <td th:text="${tmp.quantity}"></td>
+            <td th:text="${tmp.price}"></td>
+            <td>
+                <div class="sum"></div>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">삭제</a>
+    <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">장바구니비우기</a>
+    <br/>
+    <br/>
+    <div>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <p>총 상품금액</p>
+                    <p>총 상품금액</p>
+                </div>
+                <div class="col">
+                    <p>총 배송비</p>
+                    <p>총 배송비</p>
+                </div>
+                <div class="col">
+                    <p>결제예정금액</p>
+                    <p>결제예정금액</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <a class="btn btn-outline-primary border-2 py-2 px-4 rounded-pill" th:href="@{/order1/order.do}">주문서 작성</a>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <br/>
+    <br/>
