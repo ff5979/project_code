@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ReviewImageDTO;
+import com.example.dto.review.ReviewImageDTO;
 import com.example.mapper.ReviewImageMapper;
 
 @Service

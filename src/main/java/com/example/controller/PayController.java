@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.dto.CartDTO;
-import com.example.dto.ProductImageDTO;
+import com.example.dto.cart.CartDTO;
 import com.example.dto.kakaopay.kakopayready;
+import com.example.dto.product.ProductImageDTO;
 import com.example.service.CartService;
 import com.example.service.Order1Service;
 import com.example.service.ProductImageService;

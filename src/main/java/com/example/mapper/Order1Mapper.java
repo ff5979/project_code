@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.Order1DTO;
+import com.example.dto.order.Order1DTO;
 import com.example.entity.PayResult;
 
 @Mapper

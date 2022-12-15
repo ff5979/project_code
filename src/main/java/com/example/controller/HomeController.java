@@ -16,17 +16,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.dto.ProductDTO;
+import com.example.dto.product.ProductDTO;
 import com.example.entity.Member;
 import com.example.entity.Minfo;
 import com.example.entity.Token;
 import com.example.jwt.JwtUtil;
-import com.example.service.GetUserInfoService;
-import com.example.service.KakaotokenService;
 import com.example.service.MemberService;
 import com.example.service.ProductImageService;
 import com.example.service.ProductService;
 import com.example.service.SecurityLogService;
+import com.example.service.kakaologin.GetUserInfoService;
+import com.example.service.kakaologin.KakaotokenService;
 import com.example.service.review.ReviewService;
 
 @Controller

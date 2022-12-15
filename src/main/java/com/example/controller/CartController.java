@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.dto.CartDTO;
-import com.example.dto.ProductImageDTO;
+import com.example.dto.cart.CartDTO;
+import com.example.dto.product.ProductImageDTO;
 import com.example.service.AddressService;
 import com.example.service.CartService;
 import com.example.service.MemberService;

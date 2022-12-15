@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.config.GlobalProperties;
-import com.example.dto.CartDTO;
+import com.example.dto.cart.CartDTO;
 import com.example.entity.RecommendView;
 import com.example.service.CartService;
 import com.example.service.RecommendService;

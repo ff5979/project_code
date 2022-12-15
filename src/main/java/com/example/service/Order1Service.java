@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.Order1DTO;
+import com.example.dto.order.Order1DTO;
 import com.example.entity.PayResult;
 
 @Service

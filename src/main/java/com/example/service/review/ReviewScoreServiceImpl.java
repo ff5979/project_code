@@ -3,7 +3,7 @@ package com.example.service.review;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ReviewScoreDTO;
+import com.example.dto.review.ReviewScoreDTO;
 import com.example.mapper.ReviewScoreMapper;
 
 @Service

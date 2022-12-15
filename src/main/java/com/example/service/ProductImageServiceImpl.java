@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ProductImageDTO;
+import com.example.dto.product.ProductImageDTO;
 import com.example.mapper.ProductImageMapper;
 @Service
 public class ProductImageServiceImpl implements ProductImageService{

@@ -6,8 +6,8 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.CartDTO;
-import com.example.dto.ProductDTO;
+import com.example.dto.cart.CartDTO;
+import com.example.dto.product.ProductDTO;
 
 @Service
 

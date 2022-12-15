@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.ProductImageDTO;
+import com.example.dto.product.ProductImageDTO;
 
 @Mapper
 public interface ProductImageMapper {

@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.AddressDTO;
+import com.example.dto.address.AddressDTO;
 
 @Service
 public interface AddressService {

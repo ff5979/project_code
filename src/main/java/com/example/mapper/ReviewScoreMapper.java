@@ -2,7 +2,7 @@ package com.example.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.ReviewScoreDTO;
+import com.example.dto.review.ReviewScoreDTO;
 
 @Mapper
 public interface ReviewScoreMapper {

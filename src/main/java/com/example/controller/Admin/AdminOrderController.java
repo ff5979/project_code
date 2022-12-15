@@ -10,9 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.dto.AddressAndPaylist;
-import com.example.dto.AddressDTO;
-import com.example.dto.AddressinfoDTO;
+import com.example.dto.address.AddressAndPaylist;
+import com.example.dto.address.AddressDTO;
+import com.example.dto.address.AddressinfoDTO;
 import com.example.entity.PayResult;
 import com.example.service.AddressService;
 import com.example.service.MemberService;

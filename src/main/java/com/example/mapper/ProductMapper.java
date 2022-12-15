@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.ProductDTO;
+import com.example.dto.product.ProductDTO;
 import com.example.entity.Product;
 
 @Mapper

@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ReviewImageDTO;
+import com.example.dto.review.ReviewImageDTO;
 
 @Service
 public interface ReviewImageService {

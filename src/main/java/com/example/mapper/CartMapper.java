@@ -5,8 +5,8 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.CartDTO;
-import com.example.dto.ProductDTO;
+import com.example.dto.cart.CartDTO;
+import com.example.dto.product.ProductDTO;
 
 @Mapper
 public interface CartMapper {

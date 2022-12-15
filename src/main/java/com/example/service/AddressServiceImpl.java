@@ -6,7 +6,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.dto.AddressDTO;
+import com.example.dto.address.AddressDTO;
 import com.example.mapper.AddressMapper;
 
 @Service

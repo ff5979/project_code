@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.config.GlobalProperties;
-import com.example.dto.ReviewDTO;
-import com.example.dto.ReviewImageDTO;
-import com.example.dto.ReviewScoreDTO;
+import com.example.dto.review.ReviewDTO;
+import com.example.dto.review.ReviewImageDTO;
+import com.example.dto.review.ReviewScoreDTO;
 import com.example.service.review.ReviewImageService;
 import com.example.service.review.ReviewScoreService;
 import com.example.service.review.ReviewService;

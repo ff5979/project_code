@@ -2,7 +2,7 @@ package com.example.service.review;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ReviewScoreDTO;
+import com.example.dto.review.ReviewScoreDTO;
 
 @Service
 public interface ReviewScoreService {

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ProductImageDTO;
+import com.example.dto.product.ProductImageDTO;
 
 @Service
 public interface ProductImageService {

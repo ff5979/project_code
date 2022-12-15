@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.dto.AddressDTO;
-import com.example.dto.ReviewDTO;
+import com.example.dto.address.AddressDTO;
+import com.example.dto.review.ReviewDTO;
 import com.example.entity.Minfo;
 import com.example.entity.PayResult;
 import com.example.service.AddressService;

@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.AddressDTO;
+import com.example.dto.address.AddressDTO;
  
 @Mapper
 public interface AddressMapper {

@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.example.dto.ReviewDTO;
+import com.example.dto.review.ReviewDTO;
 
 @Service
 public interface ReviewService {

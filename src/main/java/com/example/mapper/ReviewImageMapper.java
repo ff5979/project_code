@@ -5,7 +5,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import com.example.dto.ReviewImageDTO;
+import com.example.dto.review.ReviewImageDTO;
 
 @Mapper
 public interface ReviewImageMapper {

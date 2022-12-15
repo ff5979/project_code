@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.example.dto.ProductDTO;
+import com.example.dto.product.ProductDTO;
 import com.example.entity.Product;
 import com.example.entity.Recommend;
 import com.example.entity.WeatherCategory;

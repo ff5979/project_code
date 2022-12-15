@@ -13,9 +13,9 @@ import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.config.GlobalProperties;
-import com.example.dto.Order1DTO;
 import com.example.dto.kakaopay.kakopayApprove;
 import com.example.dto.kakaopay.kakopayready;
+import com.example.dto.order.Order1DTO;
 import com.example.mapper.Order1Mapper;
 import com.example.mapper.ProductMapper;
 
